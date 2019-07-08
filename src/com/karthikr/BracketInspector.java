@@ -67,11 +67,6 @@ public class BracketInspector {
                 String str = splitByBracket[index];
                 if (!StringUtility.isSymmetric(str)) {
                     int mid = str.length() / 2;
-
-                    System.out.println(str.substring(0, mid));
-                    System.out.println(str.substring(mid));
-                    System.out.println("---------");
-
                     String subStringPart1 = str.substring(0, mid);
                     String subStringPart2 = str.substring(mid);
 
